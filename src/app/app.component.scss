@@ -1,0 +1,12 @@
+@media(min-width:768px) {
+  .app {
+    padding:30px;
+  }
+}
+@media(min-width: 1680px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    max-width: 1680px;
+  }
+}

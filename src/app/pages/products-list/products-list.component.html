@@ -1,0 +1,23 @@
+<div class="app-products-list-view">
+  <div class="app-products-search">
+  </div>
+  <div class="app-products-filter"></div>
+  <div class="app-products-list">
+    <div class="row m-2">
+      @if (products$|async) {
+      @for (product of products$ |async; track product.id) {
+        <div class="col-6 col-md-3 mt-3">
+            <app-product-list-item [product]="product"></app-product-list-item>
+        </div>
+      } @if((products$|async)?.length === 0) {
+        <div class="error-message bi-text-center p-3">
+          <h2>Cant find any products!</h2>
+        </div>
+        }
+      } @else {
+        <app-error [redirect]="{showRedirectButton:false}"></app-error>
+      }
+    </div>
+
+  </div>
+</div>

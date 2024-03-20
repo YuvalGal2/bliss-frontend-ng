@@ -1,0 +1,24 @@
+<div class="product-list-item" (click)="viewProduct(product.id)">
+  <div class="product-list-item-image" [ngStyle]="{'background-image': 'url(' + product.image + ')'}">
+    <div class="product-list-item-fav" (click)="$event.stopPropagation()">
+      <app-favorite-button [productId]="product.id" [state]="product.isFavorite"></app-favorite-button>
+    </div>
+    @if (product.exclusive) {
+    <div class="product-list-item-badge">
+      <app-bedge></app-bedge>
+    </div>
+    }
+  </div>
+  <div class="product-list-item-desc">
+  <!--    should be brand, BUT NOT IN API-->
+    <div class="product-list-item-category">
+      {{product.category}}
+    </div>
+    <div class="product-list-item-name">
+      {{product.title | slice: 0 : 21}}
+    </div>
+    <div class="product-list-item-price">
+      {{product.price | currency: 'USD' }}
+    </div>
+  </div>
+</div>

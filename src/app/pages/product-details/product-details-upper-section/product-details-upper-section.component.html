@@ -1,0 +1,11 @@
+<div class="product-details-image-section">
+  <div class="product-upper-actions">
+    <div class="product-exit" (click)="onClose()">X</div>
+  </div>
+  <div class="product-image-carousel">
+    <app-carousel [image]="productData?.image"></app-carousel>
+  </div>
+  <div class="product-details-fav">
+    <app-favorite-button [state]="productData?.isFavorite" [productId]="productData?.id"></app-favorite-button>
+  </div>
+</div>

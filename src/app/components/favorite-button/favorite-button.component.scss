@@ -1,0 +1,12 @@
+.fav-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border:1px solid lightgray;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 1px 5px 15px -6px #000000;
+  box-shadow: 1px 5px 15px -6px #000000;
+}

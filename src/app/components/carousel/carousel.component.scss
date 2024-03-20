@@ -1,0 +1,34 @@
+img,
+.carousel-item,
+.carousel,
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+img {
+  max-width: 400px;
+}
+//.carousel-indicators [data-bs-target] {
+  // if you really want dots instead of line in boostrap5.
+  //box-sizing: content-box;
+  //flex: 0 1 auto;
+  //width: 10px; /* change width */
+  //height: 10px; /* change height */
+  //padding: 0;
+  //margin-right: 3px;
+  //margin-left: 3px;
+  //text-indent: -999px;
+  //cursor: pointer;
+  //background-color: #fff;
+  //background-clip: padding-box;
+  //border: 0;
+  //border-top: 10px solid transparent;
+  //border-bottom: 10px solid transparent;
+  //opacity: .9;
+  //transition: opacity .6s ease;
+  //border-radius: 100%; // /* add border-radius */
+//}

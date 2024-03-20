@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body,html {
+  overflow-x: hidden;
+}
+
+@media (min-width: 1920px) {
+  html,body {
+    display: flex;
+    justify-content: center;
+  }
+}
+

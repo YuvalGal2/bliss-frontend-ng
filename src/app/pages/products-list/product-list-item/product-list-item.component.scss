@@ -1,0 +1,36 @@
+.product-list-item {
+  border-right:1px solid whitesmoke;
+  border-left:1px solid whitesmoke;
+}
+.product-list-item-image {
+  min-height: 200px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+.product-list-item-fav {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  left:calc(100% - 40px);
+  top:10px;
+}
+
+.product-list-item-category {
+  font-size:0.7rem;
+}
+.product-list-item-name {
+  font-size: 0.8rem;
+  text-wrap: balance;
+}
+
+.product-list-item-price {
+  font-weight: 500;
+  font-size:0.8rem;
+}
+.product-list-item-badge {
+  position: relative;
+  top:145px;
+}

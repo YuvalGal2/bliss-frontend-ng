@@ -1,0 +1,9 @@
+@if((product$|async)) {
+<div class="product-details-page">
+  <app-product-details-upper-section [productData]="(product$|async)"></app-product-details-upper-section>
+  <app-product-details-lower-section [productData]="(product$|async)"></app-product-details-lower-section>
+</div>
+} @else {
+  <app-error [redirect]="{showRedirectButton:true, url: '/'}"></app-error>
+
+}

@@ -1,0 +1,16 @@
+@if(loading && hidden) {
+  <div class="text-center mt-5">
+    Loading...
+  </div>
+}
+@if(!hidden) {
+  <div class="error-message text-center">
+    <p class="mt-4">Opps, something is wrong!</p>
+    <p class="mt-4">Please try again later </p>
+  </div>
+  @if(redirect.showRedirectButton) {
+    <div class="mt-4 text-center">
+      <button class="btn btn-warning" (click)="redirectBack(redirect.url)" >Go back to Home!</button>
+    </div>
+  }
+}

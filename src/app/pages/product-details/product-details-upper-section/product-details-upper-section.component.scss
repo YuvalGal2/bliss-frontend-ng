@@ -1,0 +1,18 @@
+.product-image-carousel {
+  height: 500px;
+  padding:50px;
+}
+
+.product-details-fav {
+  position: relative;
+  left: calc(100% - 40px);
+  bottom:90px;
+}
+
+.product-exit {
+  position: relative;
+  top:30px;
+  left:30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
